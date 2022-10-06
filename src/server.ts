@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 
 
 app.get('/hello', (req, res) => {
-    res.send('HELLLOOO')
+    res.send('Byee')
 })
 
 app.listen(8080, () => {
