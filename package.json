@@ -1,6 +1,7 @@
 {
   "scripts": {
     "start": "ts-node src/server.ts",
+    "restart": "pm2 restart ci-cd",
     "dev": "nodemon src/server.ts",
     "test": "echo \"No test available\""
   },

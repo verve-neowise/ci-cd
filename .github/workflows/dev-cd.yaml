@@ -20,4 +20,4 @@ jobs:
             cd /home/node/ci-cd/
             git pull
             npm i
-            pm2 restart ci-cd
+            npm restart
