@@ -11,6 +11,11 @@ app.get('/', (req, res) => {
     res.send('Hello CI/CD')
 })
 
+
+app.get('/hello', (req, res) => {
+    res.send('HELLLOOO')
+})
+
 app.listen(8080, () => {
     console.log(`Server running on http://localhost:${8080}`)
 })
