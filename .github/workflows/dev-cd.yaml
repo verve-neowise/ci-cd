@@ -2,7 +2,7 @@ name: Dev CD
 
 on:
   push:
-    branches: [ dev ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -17,4 +17,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            
+            cd /home/node/ci-cd/
+            git pull
+            npm i
+            pm2 restart ci-cd
