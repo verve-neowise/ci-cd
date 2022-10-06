@@ -18,3 +18,4 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd /home/node/ci-cd/
+            ./restart.sh
